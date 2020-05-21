@@ -6,4 +6,11 @@ const server = express();
 
 server.use(express.json());
 
+const accounts  = require('./accounts')
+
+server.use("/accounts", accounts)
+
+
+
+
 module.exports = server;
